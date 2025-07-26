@@ -1,5 +1,5 @@
 import './App.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import MovieCard from "./components/MovieCard";
 
 const API_URL = "http://www.omdbapi.com?apikey=a68daac8";
@@ -14,10 +14,6 @@ const App = () => {
 
     setMovies(data.Search);
   }
-
-  useEffect(() => {
-    searchMovies("Batman");
-  }, []);
 
   return (
     <div className="app">
