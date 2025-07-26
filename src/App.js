@@ -1,5 +1,6 @@
 import './App.css';
 import { useEffect, useState } from 'react';
+import MovieCard from "./components/MovieCard";
 
 const API_URL = "http://www.omdbapi.com?apikey=a68daac8";
 const movie1 = {
@@ -42,15 +43,7 @@ const App = () => {
       </div>
 
       <div className="container">
-        <div className="movie">
-          <div>
-            <p>{movie1.Year}</p>
-          </div>
-
-          <div>
-            <img src={movie1.Poster} alt={movie1.Title}/>
-          </div>
-        </div>
+        <MovieCard movie1={movie1}/>
       </div>
     </div>
   );
