@@ -1,13 +1,21 @@
 import './App.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const API_URL = "http://www.omdbapi.com?apikey=a68daac8";
+const movie1 = {
+  "Title": "The Lego Batman Movie",
+  "Year": "2017",
+  "imdbID": "tt4116284",
+  "Type": "movie",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMTcyNTEyOTY0M15BMl5BanBnXkFtZTgwOTAyNzU3MDI@._V1_SX300.jpg"
+}
 
 const App = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+
   const searchMovies = async (title) => {
     const response = await fetch(`${API_URL}&s=${title}`);
     const data = await response.json();
-
     console.log(data.Search);
   }
 
@@ -16,8 +24,36 @@ const App = () => {
   }, []);
 
   return (
-    <h1>App</h1>
+    <div className="app">
+      <h1>SearchFlix</h1>
+
+      <div className="search">
+        <input
+          placeholder="Search for movies"
+          value="Superman"
+          onChange={() => { }}
+        />
+        <img
+          src="https://raw.githubusercontent.com/gist/adrianhajdin/997a8cdf94234e889fa47be89a4759f1/raw/f13e5a9a0d1e299696aa4a0fe3a0026fa2a387f7/search.svg"
+          alt="search"
+          className="search-icon"
+          onClick={() => { }}
+        />
+      </div>
+
+      <div className="container">
+        <div className="movie">
+          <div>
+            <p>{movie1.Year}</p>
+          </div>
+
+          <div>
+            <img src={movie1.Poster} alt={movie1.Title}/>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
-export default App;
+export default App
