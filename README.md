@@ -4,6 +4,7 @@ An interactive and modern web application that allows users to search for movies
 
 Built using **React**, **JavaScript**, **HTML**, and **CSS**, this app provides a clean, responsive UI and real-time search capabilities powered by a public movie API.
 
+<img src="public/home.png" alt="home page">
 ---
 
 ## 🚀 Features
