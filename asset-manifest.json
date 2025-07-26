@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/searchflix/static/css/main.07b32d20.css",
+    "main.js": "/searchflix/static/js/main.efa677c3.js",
+    "static/js/453.d8ceb2c5.chunk.js": "/searchflix/static/js/453.d8ceb2c5.chunk.js",
+    "index.html": "/searchflix/index.html",
+    "main.07b32d20.css.map": "/searchflix/static/css/main.07b32d20.css.map",
+    "main.efa677c3.js.map": "/searchflix/static/js/main.efa677c3.js.map",
+    "453.d8ceb2c5.chunk.js.map": "/searchflix/static/js/453.d8ceb2c5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.07b32d20.css",
+    "static/js/main.efa677c3.js"
+  ]
+}
